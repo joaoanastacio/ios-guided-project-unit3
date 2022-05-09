@@ -47,9 +47,4 @@ class ResultsViewController: UIViewController {
         resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
         resultDefinitionLabel.text = mostCommonAnswer.definition
     }
-    
-    @IBAction func unwindToQuizIntroduction(segue:
-    UIStoryboardSegue) {
-        
-    }
 }
