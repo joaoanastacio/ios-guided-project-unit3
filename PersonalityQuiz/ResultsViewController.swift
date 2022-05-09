@@ -26,6 +26,7 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        calculatePersonalityResult()
     }
     
     func calculatePersonalityResult() {
@@ -37,8 +38,7 @@ class ResultsViewController: UIViewController {
             }
         }
         
-        let frequentAnswersSorted = frequencyOfAnswers.sorted(by:
-        { (pair1, pair2) in
+        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) in
             return pair1.value > pair2.value
         })
         
